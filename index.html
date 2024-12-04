@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de inicio -->
+    <section class="screen start-screen" id="startScreen">
+        <h1>Arcade Portfolio</h1>
+        <button id="startButton">Start</button>
+    </section>
+
+    <!-- Pantalla de perfil -->
+    <section class="screen profile-screen" id="profileScreen" style="display: none;">
+        <h2>Perfil de GitHub</h2>
+        <div id="profileInfo">
+            <!-- Aquí irá la información del perfil de GitHub -->
+            <p><strong>Nombre:</strong> Juan Pérez</p>
+            <p><strong>Bio:</strong> Desarrollador apasionado de la tecnología retro.</p>
+            <p><strong>Repositorios Públicos:</strong> 24</p>
+        </div>
+        <button onclick="showScreen('startScreen')">Back</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
